@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pod</title>
+    <!-- <script src="script.js"></script> -->
+  </head>
+  <body>
+    <img src="./images/desktop/logo.svg" alt="logo" class="logo" />
+    <div class="content">
+      <h1>Publish your podcasts <span>everywhere.</span></h1>
+      <p>
+        Upload your audio to Pod with a single click. We’ll then distribute your
+        podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
+        more!
+      </p>
+      <div class="imgs">
+        <img src="./images/desktop/spotify.svg" alt="spotify" />
+        <img src="./images/desktop/apple-podcast.svg" alt="apple-podcast" />
+        <img src="./images/desktop/google-podcasts.svg" alt="google-podcasts" />
+        <img src="./images/desktop/pocket-casts.svg" alt="pocket-casts" />
+      </div>
+      <div class="btns">
+        <input type="text" id="emailInput" placeholder="Email address" />
+        <button onclick="validateEmail()">Request Access</button>
+      </div>
+      <p id="message"></p>
+    </div>
+    <img
+      src="./images/desktop/bg-pattern-dots.svg"
+      alt="bg-pattern-dots"
+      class="dots"
+    />
+    <script>
+      function validateEmail() {
+        var emailInput = document.getElementById("emailInput");
+        var message = document.getElementById("message");
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        var userEmail = emailInput.value;
+
+        if (emailRegex.test(userEmail)) {
+          message.innerHTML = "Submitted! Email is valid.";
+          message.style.color = "#54E6AF";
+        } else {
+          message.innerHTML = "Oops! Please check your email.";
+          message.style.color = "#FB3E3E";
+        }
+      }
+    </script>
+  </body>
+</html>

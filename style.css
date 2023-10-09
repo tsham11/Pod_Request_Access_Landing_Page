@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(24, 35, 55, 0.95), rgba(18, 23, 37, 0.95)), url("images/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+  max-width: 375px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Chivo', sans-serif;
+}
+
+.logo {
+  width: 134.851px;
+  height: 56px;
+  margin: 62px 120px 57px;
+}
+
+.content {
+  padding: 0 24px;
+}
+
+h1 {
+  color: #54E6AF;
+  text-align: center;
+  font-size: 26px;
+  line-height: 38px;
+  text-transform: uppercase;
+  width: 327px;
+  margin-bottom: 16px;
+}
+
+span {
+  color: #FFF;
+  font-size: 26px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+p {
+  color: #C2CBE5;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+  width: 327px;
+  margin-bottom: 33px;
+}
+
+.imgs {
+  display: flex;
+  padding: 0 6px;
+  gap: 22px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  margin: 48px 0 4px;
+  gap: 16px;
+}
+
+input {
+  width: 327px;
+  height: 46px;
+  border-radius: 28px;
+  background: #2C344B;
+  border: none;
+  padding-left: 32px;
+}
+
+input::placeholder {
+  color: #FFF;
+  font-size: 14px;
+  line-height: 28px;
+  opacity: 0.5;
+}
+
+input:focus {
+  color: #FFF;
+  outline: none;
+}
+
+button {
+  width: 326px;
+  height: 46px;
+  border: none;
+  border-radius: 28px;
+  background: #54E6AF;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.50);
+  font-family: 'Chivo', sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+button:hover {
+  border-radius: 28px;
+  background: #B3FFE2;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.50);
+}
+
+#message {
+  margin-bottom: 65px;
+  font-size: 12px;
+  margin-left: 0px;
+}
+
+.dots {
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  body {
+    max-width: 768px;
+    background-image: url("images/tablet/image-host.jpg");
+    background-repeat: no-repeat;
+    background-color: #121725;
+    background-position: top right;
+  }
+
+  .logo {
+    margin: 50px auto 154px 39px;
+  }
+
+  .content {
+    background: #121725;
+    width: 635px;
+    height: 509px;
+    margin: 0 94px 153px 39px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+    width: 635px;
+    margin-bottom: 31px;
+    margin-top: 93px;
+    text-align: start;
+    order: 1;
+  }
+
+  span {
+    font-size: 48px;
+    line-height: 59px;
+  }
+
+  p {
+    color: #C2CBE5;
+    text-align: start;
+    font-size: 18px;
+    line-height: 28px;
+    width: 445px;
+    margin-bottom: 40px;
+    order: 2;
+  }
+
+  .imgs {
+    display: flex;
+    width: 536px;
+    height: 29px;
+    padding: 0;
+    gap: 20px;
+    order: 4;
+  }
+
+  .imgs img {
+    width: 100%;
+  }
+
+  .btns {
+    flex-direction: row;
+    align-items: flex-start;
+    order: 3;
+    margin: 0;
+    margin-bottom: 8px;
+    gap: 0;
+  }
+
+  input {
+    width: 427px;
+    height: 56px;
+    border: none;
+    padding-left: 32px;
+  }
+
+  button {
+    position: relative;
+    width: 162px;
+    height: 46px;
+    left: -167px;
+    margin-top: 5px;
+  }
+
+  #message {
+    order: 3;
+    margin-bottom: 44px;
+    margin-left: 32px;
+  }
+
+  .dots {
+    display: block;
+    position: relative;
+    left: -230px;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  body {
+    max-width: 1440px;
+    background-image: url("images/desktop/image-host.jpg");
+    background-repeat: no-repeat;
+    background-color: #121725;
+    background-position: right top 130px;
+  }
+
+  .logo {
+    margin: 102px auto 104px 165px;
+  }
+
+  .content {
+    background: #121725;
+    width: 723px;
+    height: 509px;
+    margin: 0 auto 130px 165px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 52px;
+    line-height: 62px;
+    width: 665px;
+    margin-bottom: 24px;
+    margin-top: 88px;
+    text-align: start;
+    order: 1;
+  }
+
+  span {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  p {
+    color: #C2CBE5;
+    text-align: start;
+    font-size: 18px;
+    line-height: 28px;
+    width: 445px;
+    margin-bottom: 40px;
+    order: 2;
+    opacity: 0.7;
+  }
+
+  .imgs {
+    display: flex;
+    padding: 0;
+    gap: 40px;
+    order: 4;
+  }
+
+  .btns {
+    flex-direction: row;
+    align-items: flex-start;
+    order: 3;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 427px;
+    height: 56px;
+  }
+
+  button {
+    width: 162px;
+    height: 46px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  #message {
+    order: 3;
+    margin-bottom: 44px;
+    margin-left: 32px;
+  }
+
+  .dots {
+    display: block;
+    position: relative;
+    left: 600px;
+    bottom: 180px;
+  }
+}
